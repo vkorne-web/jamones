@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- link tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Productos</title>
+</head>
+    <body>
+        <header>
+            <!-- menu hamburguesa -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logoweb.jpeg" alt="Jamones Codeserranos" width="50%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comprar.html">Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!-- contenido principal -->
+    <main class="productos">
+        <div class="contenido">
+            <div class="texto">
+                <h1> Nuestros productos </h1>
+                <p>Aquí encontrarás una selección</p>
+                <p>de nuestros mejores jamones.</p>
+            </div>
+            <div>
+                <img src="../img/nuestrosprod.png" alt="jamon y vino" class="imagen-body">
+            </div>
+        </div>
+        <hr>
+    </main>
+    <!-- seccion carrito -->
+    <section class="carrito">
+        <div class="contenido">
+            <div class="categorias">
+                <p>Categoría</p>
+                <ul>
+                    <li><a href="#">Jamon entero</a></li>
+                    <li><a href="#">Loncheado</a></li>
+                    <li><a href="#">Packs</a></li>
+                </ul>
+                <!-- Slider de precios -->
+                <div class="precio-slider">
+                    <input type="range" id="rango-precio" min="10" max="500" value="100" step="10">
+                    <span id="valor-precio">100 €</span>
+                </div>
+                <!-- Tipos de jamón -->
+                <div class="tipos">
+                    <p>Tipos</p>
+                    <ul>
+                        <li><a href="#">Ibérico</a></li>
+                        <li><a href="#">Reserva</a></li>
+                    </ul>
+                </div>
+            </div>
+                <!-- Productos destacados -->
+            <div class="productos-destacados-contenedor">
+                <div class="productos-destacados">
+                    <img src="../img/iberico.png" alt="Jamon Ibérico" class="imagen-producto">
+                    <p> Jamón Ibérico </p>
+                    <span> 300 € </span>
+                    <button>Añadir</button>
+                </div>
+                <div class="productos-destacados">
+                    <img src="../img/blanco.png" alt="Jamon blanco" class="imagen-producto">
+                    <div class="texto-producto">
+                        <p> Jamón Blanco </p>
+                        <span> 200 € </span>
+                        <button>Añadir</button>
+                    </div>
+                </div>
+                <div class="productos-destacados">
+                    <img src="../img/paleta.png" alt="Paleta" class="imagen-producto">
+                    <div class="texto-producto">
+                        <p> Paleta </p>
+                        <span> 150 € </span>
+                        <button>Añadir</button>
+                    </div>
+                </div>
+                <div class="productos-destacados">
+                    <img src="../img/loncha.png" alt="Jamon Loncheado" class="imagen-producto">
+                    <div class="texto-producto">
+                        <p> Jamón Loncheado </p>
+                        <span> 20 € </span>
+                        <button>Añadir</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="item">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../img/facebook.png" alt="logo facebook" class="icono">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../img/instagram.png" alt="logo instagram" class="icono">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="../img/gorjeo.png" alt="logo gorjeo" class="icono">
+                </a>
+            </div>
+        </div>
+        <p> todos los derechos reservados </p>
+    </footer>
+</body>
+<!-- link script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

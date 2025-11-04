@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- link tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Comprar</title>
+</head>
+    <body>
+        <header>
+            <!-- menu hamburguesa -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logoweb.jpeg" alt="Jamones Codeserranos" width="50%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comprar.html">Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!-- contenido principal -->
+    <main class="comprar">
+        <div class="cesta">
+            <div class="texto">
+                <h1> Comprar </h1>
+                <p>Aquí podrás realizar tu compra</p>
+                <p>de forma segura y rápida.</p>
+            </div>
+            <div>
+                <img src="../img/carro.png" alt="carrito" class="imagen-carrito">
+            </div>
+        </div>
+        <hr>
+    </main>
+    <!-- seccion compra -->
+    <section class="compra">
+        <h2>Resumen de la compra</h2>
+        <div class="cesta">
+            <div class="texto">
+                <h3>Productos en la cesta</h3>
+                <ul>
+                    <li>Producto 1</li>
+                    <li>Producto 2</li>
+                    <li>Producto 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <form action="procesar_compra.php" method="POST">
+        <h4> Datos de envío </h4>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+        <label for="cp">Código postal</label>
+        <input type="text" id="cp" name="cp" required>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+        <label for="comentarios">Comentarios (opcional)</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        <button type="submit">Finalizar compra</button>
+    </form>
+        <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="item">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../img/facebook.png" alt="logo facebook" class="icono">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../img/instagram.png" alt="logo instagram" class="icono">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="../img/gorjeo.png" alt="logo gorjeo" class="icono">
+                </a>
+            </div>
+        </div>
+        <p> todos los derechos reservados </p>
+    </footer>
+</body>
+<!-- link script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
