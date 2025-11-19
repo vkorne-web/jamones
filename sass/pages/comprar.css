@@ -1,0 +1,25 @@
+/* estilos para comprar */
+.cesta {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  gap: 500px;
+}
+
+.cesta .imagen-carrito {
+  width: 20%;
+  height: auto;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 10%;
+  margin: auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=comprar.css.map */

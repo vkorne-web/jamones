@@ -1,0 +1,53 @@
+/* estilos para comprar */
+.cesta {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.descripcion-compra .texto h1 {
+    text-align: center;
+}
+
+.descripcion-compra .texto p {
+    text-align: center;
+}
+
+.compra .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cesta .texto h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cesta .texto ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+img.imagen-carrito {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button.btn.btn-secondary.btn-sm {
+    margin-top: 15px;
+}

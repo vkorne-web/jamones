@@ -1,0 +1,39 @@
+/* header logo */
+.logo {
+    text-align: left;
+    padding: 20px;
+    width: 100px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+/* estilos de header */
+.barra-superior {
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    padding: 10px;
+    align-items: center;
+    align-content: top;
+    height: 100px;
+}
+
+.botones-encabezado a {
+    border: none;
+    margin-left: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: black;
+}
+
+.botones-encabezado a:hover {
+    background-color: #bbb;
+}
+

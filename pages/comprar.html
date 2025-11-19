@@ -19,7 +19,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="../img/logoweb.jpeg" alt="Jamones Codeserranos" width="50%">
+                        <img src="../img/logoweb.png" alt="Jamones Codeserranos" width="50%">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -43,50 +43,89 @@
 
     <!-- contenido principal -->
     <main class="comprar">
-        <div class="cesta">
-            <div class="texto">
-                <h1> Comprar </h1>
-                <p>Aquí podrás realizar tu compra</p>
-                <p>de forma segura y rápida.</p>
-            </div>
-            <div>
-                <img src="../img/carro.png" alt="carrito" class="imagen-carrito">
+        <div class="container">
+            <div class="descripcion-compra">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="texto">
+                            <h1>Comprar</h1>
+                            <p>Aquí podrás realizar tu compra de forma segura y rápida.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                        <img src="../img/carro.png" alt="carrito" class="imagen-carrito">
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
     </main>
+
     <!-- seccion compra -->
     <section class="compra">
-        <h2>Resumen de la compra</h2>
-        <div class="cesta">
-            <div class="texto">
-                <h3>Productos en la cesta</h3>
-                <ul>
-                    <li>Producto 1</li>
-                    <li>Producto 2</li>
-                    <li>Producto 3</li>
-                </ul>
+        <div class="container">
+            <h2>Resumen de la compra</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="cesta">
+                        <div class="texto">
+                            <h3>Productos en la cesta</h3>
+                            <ul>
+                                <li>Producto 1</li>
+                                <li>Producto 2</li>
+                                <li>Producto 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <form action="procesar_compra.php" method="POST">
+                        <h4> Datos de envío </h4>
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo:</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección:</label>
+                            <input type="text" class="form-control" id="direccion">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Ciudad" class="form-label">Ciudad:</label>
+                            <input type="text" class="form-control" id="ciudad">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Código postal" class="form-label">Código postal:</label>
+                            <input type="text" class="form-control" id="codigo-postal">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Teléfono" class="form-label">Teléfono:</label>
+                            <input type="text" class="form-control" id="telefono">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Correo electrónico" class="form-label">Correo electrónico:</label>
+                            <input type="text" class="form-control" id="correo-electronico">
+                        </div>
+
+                        <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Deje su comentario</label>
+                        </div>
+                        <button type="button" class="btn btn-secondary btn-sm">Pagar</button>
+                    </form>
+                </div>
             </div>
         </div>
+
+
+
+
     </section>
-    <form action="procesar_compra.php" method="POST">
-        <h4> Datos de envío </h4>
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="direccion">Dirección</label>
-        <input type="text" id="direccion" name="direccion" required>
-        <label for="ciudad">Ciudad</label>
-        <input type="text" id="ciudad" name="ciudad" required>
-        <label for="cp">Código postal</label>
-        <input type="text" id="cp" name="cp" required>
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" required>
-        <label for="comentarios">Comentarios (opcional)</label>
-        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-        <button type="submit">Finalizar compra</button>
-    </form>
         <!-- footer -->
     <footer>
         <div class="footer">

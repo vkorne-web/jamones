@@ -1,0 +1,37 @@
+/* tablet */
+@media (min-width: 768px) {
+    main {
+        padding: 40px;
+    }
+
+    .carrito .contenido {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .carrito .contenido .categorias {
+        flex-shrink: 0;
+        height: fit-content;
+        position: sticky;
+        top: 100px;
+    }
+
+    .productos-destacados-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        flex-grow: 1;
+    }
+
+    .cesta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .descripcion-compra .texto h1 {
+        text-align: left;
+    }
+
+    .descripcion-compra .texto p {
+        text-align: left;
+    }
+}
