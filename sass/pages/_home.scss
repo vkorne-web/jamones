@@ -1,3 +1,8 @@
+.descripcion {
+    @include borde-jamon;
+    color: $color-jamon;
+}
+
 /* estilos de main */
 main {
     text-align: left;
@@ -10,6 +15,10 @@ section h2 {
 }
 
 main p.descripcion {
+     @include borde-jamon;           
+    background-color: #FFF8F0; 
+    line-height: 1.7;
+    margin: 20px 0;
     text-align: justify;
 }
 

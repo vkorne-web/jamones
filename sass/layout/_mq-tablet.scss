@@ -4,10 +4,23 @@
         padding: 40px;
     }
 
+    .productos {
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+        }
+    }
+
     .carrito .contenido {
         display: flex;
         flex-direction: row;
         gap: 20px;
+    }
+
+    img.imagen-carrito {
+        width: 40%;
     }
 
     .carrito .contenido .categorias {
@@ -19,11 +32,7 @@
 
     .productos-destacados-contenedor {
         grid-template-columns: repeat(2, 1fr);
-        flex-grow: 1;
-    }
-
-    .cesta {
-        flex-direction: column;
+        width: 72%;
         gap: 20px;
     }
 
