@@ -1,0 +1,7 @@
+@import '_variables';
+
+@mixin borde-jamon($grosor: 2px) {
+  border: $grosor solid $color-jamon;
+  border-radius: 10px;
+  padding: 15px;
+}

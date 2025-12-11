@@ -1,7 +1,12 @@
 /* estilos para comprar */
-.cesta {
-    display: flex;
-    justify-content: left;
+
+section.compra {
+    text-align: center;
+    padding: 20px;
+}
+
+.descripcion-comprar {
+    text-align: center;
     align-items: center;
     max-width: 70%;
     margin: 0 auto;
@@ -38,7 +43,7 @@ img.imagen-carrito {
     align-items: center;
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
     max-width: 80%;
